@@ -1,16 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display+SC:wght@700&display=swap');
+
 /* The Home Section ----------------------------------------------------------------------------------------------------------------*/
 .HomeContainerStyle{
     display: flex;
-    text-align: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 20%;
-    width: 100%;
+}
+.SubtitleContainer{
+    width: 50%;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* The Navigation Section ----------------------------------------------------------------------------------------------------------------*/
 .GlobalNav{
     display: flex;
     justify-content: space-between;
+    
 }
 .NavContainer{
     display: flex;
@@ -31,6 +39,20 @@
 .ContactContainer p{
     padding: 0;
     margin: .25em
+}
+/* The Experience Section ----------------------------------------------------------------------------------------------------------------*/
+.ExperienceContainer{
+    padding-top: 15%;
+}
+.ExperienceBodyContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+}
+.ExpSchool, .ExpWork, .ExpTech{
+    width: 30%;
+    padding-left: 1em;
 }
 
 /* The Carousel Section ----------------------------------------------------------------------------------------------------------------*/

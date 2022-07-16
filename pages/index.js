@@ -3,6 +3,7 @@ import { render } from "react-dom"
 import HomeContainer from "./components/home"
 import  Navigation  from "./components/navigation"
 import Experience from "./components/experience"
+import Projects from "./components/projects"
 
 
 class Home extends React.Component {
@@ -12,6 +13,7 @@ class Home extends React.Component {
       <Navigation/>
       <HomeContainer/>
       <Experience/>
+      <Projects/>
       </>
     )
   }
