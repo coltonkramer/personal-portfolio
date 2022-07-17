@@ -10,13 +10,11 @@ const projects = [
       title: "Pokemon",
       subtitle: "Pokemon Battler Game using the PokeApi",
       img: pokemonGameImageMainSrc,
-      value: "1",
     },
     {
       title: "Calculator",
       subtitle: "Simple calculator app",
       img: calculatorImageMainSrc,
-      value: "2",
     },
   //   {
   //     title: "Cafe",
