@@ -33,7 +33,9 @@ const Navigation = () => {
                     <p>colton.kramer1@gmail.com</p>
                     <p>803-445-9445</p>
                 </div>
+                {typeof window !== 'undefined' && 
                 <DarkMode/>
+                }
             </div>
                 </div>
             )

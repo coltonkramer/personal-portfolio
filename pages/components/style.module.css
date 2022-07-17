@@ -13,6 +13,22 @@
     justify-content: center;
     align-items: center;
 }
+.HeroImage{
+    overflow: hidden;
+    box-shadow: 0 0 0 5px #572760;
+    padding: 10px;
+}
+
+.HeroImage2{
+    box-shadow: 0 0 0 5px #9C2760;
+    padding: 15px;
+}
+
+.HeroImage3{
+    transform: rotate(45deg);
+    box-shadow:0 0 0 5px #e91E63;
+    padding: 15px;
+}
 
 /* The Navigation Section ----------------------------------------------------------------------------------------------------------------*/
 .GlobalNavStyle{
@@ -47,11 +63,13 @@
 }
 /* The Experience Section ----------------------------------------------------------------------------------------------------------------*/
 .ExperienceContainer{
+    width: 80%;
     padding-top: 15%;
+    margin: 0 auto;
 }
 .ExperienceBodyContainer{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-evenly;
     
 }
@@ -60,13 +78,30 @@
     padding-left: 1em;
 }
 
+.ExpImage{
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border: solid 4px #e91E63;
+    padding: 10px;
+}
+
+
 /* The Projects Section ----------------------------------------------------------------------------------------------------------------*/
 .ProjectsContainer{
+    width: 80%;
     padding: 15% 0;
-
+    margin: 0 auto;
+    
 }
 .ProjectsBodyContainer{
     display: flex;
     justify-content: space-evenly;
-
+    
 }
+/* The Projects Section ----------------------------------------------------------------------------------------------------------------*/
+.DarkMode{
+    background-color: #202121;
+    color: #F8F8FF;
+  }

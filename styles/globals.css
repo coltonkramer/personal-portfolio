@@ -11,6 +11,7 @@ body {
 h1,h2{
   font-family: 'Playfair Display SC', serif;
   color: #572760;
+  font-size: 3em;
 }
 
 a {
@@ -21,7 +22,4 @@ a {
 * {
   box-sizing: border-box;
 }
-.DarkModeToggle{
-  background-color: #202121;
-  color: #F8F8FF;
-}
+

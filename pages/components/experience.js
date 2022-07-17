@@ -1,6 +1,7 @@
 import React from 'react'
-import { ExperienceContainer, ExperienceBodyContainer, ExpSchool, ExpWork, ExpTech } from "./style.module.css";
-
+import Image from 'next/image'
+import { ExperienceContainer, ExperienceBodyContainer, ExpSchool, ExpWork, ExpTech, ExpImage } from "./style.module.css";
+import laptop from '../assets/pexels-junior-teixeira-2047905.jpg'
 
 
 const Experience = () => {
@@ -29,6 +30,20 @@ const Experience = () => {
             <li>Git</li>
           </ul>
         </div>
+        <div  >
+        <div  >
+        <div  >
+      <Image
+      className={ExpImage}
+      src={laptop}
+      alt='A laptop in a dark room'
+      width="700px"
+      height="700px"
+      objectFit="cover"
+      />
+      </div>
+      </div>
+      </div>
       </div>
       </div>
     </>
