@@ -5,7 +5,7 @@ body {
   padding: 0;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
-  width: 80%;
+  width: 100%;
   background-color: #F8F8FF;
 }
 h1,h2{
@@ -20,4 +20,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.DarkModeToggle{
+  background-color: #202121;
+  color: #F8F8FF;
 }

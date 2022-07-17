@@ -1,6 +1,7 @@
 import React from "react";
 import Link from 'next/link'
-import { NavContainer, GlobalNav, ContactContainer} from "./style.module.css"
+import DarkMode from "./dark-mode";
+import { NavContainer, GlobalNav, ContactContainer, GlobalNavStyle} from "./style.module.css"
 
 
 
@@ -8,7 +9,7 @@ import { NavContainer, GlobalNav, ContactContainer} from "./style.module.css"
 const Navigation = () => {
 
             return(
-                <>
+                <div className={GlobalNavStyle}>
             <div className={GlobalNav}>
                 <div className={NavContainer}>
                     <div>
@@ -32,8 +33,9 @@ const Navigation = () => {
                     <p>colton.kramer1@gmail.com</p>
                     <p>803-445-9445</p>
                 </div>
+                <DarkMode/>
             </div>
-                </>
+                </div>
             )
     }
     export default Navigation

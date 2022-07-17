@@ -4,7 +4,7 @@
 .HomeContainerStyle{
     display: flex;
     justify-content: space-evenly;
-    padding-top: 20%;
+    padding-top: 10%;
 }
 .SubtitleContainer{
     width: 50%;
@@ -15,17 +15,22 @@
 }
 
 /* The Navigation Section ----------------------------------------------------------------------------------------------------------------*/
+.GlobalNavStyle{
+    width: 100%;
+    background-color: #e91E63;
+}
 .GlobalNav{
     display: flex;
     justify-content: space-between;
-    
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
 }
 .NavContainer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 40%;
-    padding-top: 2rem;
+    width: 25%;
 }
 .NavContainer a{
     font-size: 2em;
@@ -57,6 +62,8 @@
 
 /* The Projects Section ----------------------------------------------------------------------------------------------------------------*/
 .ProjectsContainer{
+    padding: 15% 0;
+
 }
 .ProjectsBodyContainer{
     display: flex;
