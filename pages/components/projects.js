@@ -7,22 +7,25 @@ import projects from "../assets/projectsData";
 const Projects = () => {
   const buildImageContainer = (project) => {
     return (
-      <Link href={{
-        pathname: '../components/projects-overview',
-        state: {
-          whichProject: project.index
-        }
-      }}>
-        <a>
-          <Image
-            src={project.img}
-            alt={project.subtitle}
-            title={project.title}
-            width={400}
-            height={400}
-          />
-        </a>
-      </Link>
+
+        <Link
+          href={{
+            pathname: "../components/projects-overview",
+            state: {
+              whichProject: project.index,
+            },
+          }}
+        >
+          <a>
+            <Image
+              src={project.img}
+              alt={project.subtitle}
+              title={project.title}
+              width={400}
+              height={400}
+            />
+          </a>
+        </Link>
     );
   };
 
