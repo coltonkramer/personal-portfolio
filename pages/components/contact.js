@@ -1,5 +1,5 @@
 import React from 'react'
-import { HomeNavigation } from '../HomeNavigation'
+
 
 
 const Contact = () => {
@@ -9,7 +9,6 @@ const Contact = () => {
       <>
             <div><h1>Contact</h1></div>
 
-      <HomeNavigation/>
       </>
     )
   }

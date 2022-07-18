@@ -18,7 +18,7 @@ const Navigation = () => {
                         </Link>
                     </div>
                     <div>
-                        <Link href="./components/projects">
+                        <Link href="#projects-container">
                         <a>Projects</a>
                         </Link>
                     </div>
@@ -28,11 +28,11 @@ const Navigation = () => {
                         </Link>
                     </div>
                 </div>
-                <div className={ContactContainer}>
+                {/* <div className={ContactContainer}>
                     <p>Colton Kramer</p>
                     <p>colton.kramer1@gmail.com</p>
                     <p>803-445-9445</p>
-                </div>
+                </div> */}
                 {typeof window !== 'undefined' && 
                 <DarkMode/>
                 }

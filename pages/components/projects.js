@@ -12,7 +12,7 @@ const Projects = () => {
 
   const buildImageContainer = (project) => {
     return(
-      <Link href="/">
+      <Link href="./projects-overview.js">
       <a>
       <Image
         src={project.img}
@@ -28,7 +28,7 @@ const Projects = () => {
 
     return (
     <>
-    <div className={ProjectsContainer}>
+    <div className={ProjectsContainer} id="projects-container">
         <div><h2>Projects</h2></div>
     <div className={ProjectsBodyContainer}>
       {projects.map(project => {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap');
 
 html,
 body {
@@ -7,10 +7,11 @@ body {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
   background-color: #F8F8FF;
+  /* background-color: #243447; */
 }
 h1,h2{
   font-family: 'Playfair Display SC', serif;
-  color: #572760;
+  color: #e91E63;
   font-size: 3em;
 }
 

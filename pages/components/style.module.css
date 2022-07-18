@@ -1,39 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display+SC:wght@700&display=swap');
-
-/* The Home Section ----------------------------------------------------------------------------------------------------------------*/
-.HomeContainerStyle{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 10%;
-}
-.SubtitleContainer{
-    width: 50%;
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.HeroImage{
-    overflow: hidden;
-    box-shadow: 0 0 0 5px #572760;
-    padding: 10px;
-}
-
-.HeroImage2{
-    box-shadow: 0 0 0 5px #9C2760;
-    padding: 15px;
-}
-
-.HeroImage3{
-    transform: rotate(45deg);
-    box-shadow:0 0 0 5px #e91E63;
-    padding: 15px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap');
 
 /* The Navigation Section ----------------------------------------------------------------------------------------------------------------*/
 .GlobalNavStyle{
     width: 100%;
-    background-color: #e91E63;
+    background-color: #60C689;
+    margin-bottom: 10%;
 }
 .GlobalNav{
     display: flex;
@@ -61,11 +32,48 @@
     padding: 0;
     margin: .25em
 }
+/* The Home Section ----------------------------------------------------------------------------------------------------------------*/
+.HomeContainerStyle{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 15%;
+}
+.SubtitleContainer{
+    width: 50%;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.HeroImage{
+    overflow: hidden;
+    box-shadow: 0 0 0 5px #60C689;
+    padding: 10px;
+}
+
+.HeroImage2{
+    box-shadow: 0 0 0 5px #57DCBC;
+    padding: 15px;
+}
+
+.HeroImage3{
+    transform: rotate(45deg);
+    box-shadow:0 0 0 5px #57ACDC;
+    padding: 15px;
+}
+
 /* The Experience Section ----------------------------------------------------------------------------------------------------------------*/
 .ExperienceContainer{
-    width: 80%;
-    padding-top: 15%;
+    width: 100%;
+    padding: 5% 10%;
     margin: 0 auto;
+    background-color: #57DCBC;
+}
+.ExperienceContainer{
+    font-size: 1.5em;
+    color: #000;
 }
 .ExperienceBodyContainer{
     display: flex;
@@ -101,7 +109,14 @@
     
 }
 /* The Projects Section ----------------------------------------------------------------------------------------------------------------*/
-.DarkMode{
-    background-color: #202121;
+.DarkModeStyle{
+    background-color: #141d26;
     color: #F8F8FF;
+}
+.ExpDarkMode{
+    background-color: #243447;
+    color: #F8F8FF;
+}
+  .DarkModeContainer{
+    cursor: pointer;
   }

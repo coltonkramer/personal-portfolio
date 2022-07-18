@@ -1,43 +1,39 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
-import "./style.module.css"
-import { setTheme } from '../helpers/helpers'
-
-
+import { useState, useEffect} from 'react'
+import {DarkModeContainer, DarkModeStyle, ToggleButton, ExpDarkMode } from "./style.module.css"
 
 const DarkMode = () => {
-  const [togClass, setTogClass] = useState('dark');
-  let theme = localStorage.getItem('theme');
 
-  const handleOnClick = () => {
-      if (localStorage.getItem('theme') === 'theme-dark') {
-          setTheme('theme-light');
-          setTogClass('light')
-      } else {
-          setTheme('theme-dark');
-          setTogClass('dark')
-      }
+const activeTheme = localStorage.getItem('theme')
+
+const [isDarkModeActive, setIsDarkModeActive] = useState(activeTheme ? true : false);
+
+const handleDarkMode = () =>{
+  document.body.classList.add(DarkModeStyle)
+  document.getElementById('experience-container').classList.add(ExpDarkMode)
+  setIsDarkModeActive(true)
+  setTheme(true)
+}
+
+const handleLightMode = () =>{
+  document.body.classList.remove(DarkModeStyle)
+  document.getElementById('experience-container').classList.remove(ExpDarkMode)
+  setIsDarkModeActive(false)
+  setTheme(false)
+}
+
+const setTheme = (theme) => {
+  if (activeTheme !== theme){
+    localStorage.setItem('theme', theme)
   }
+}
 
-  useEffect(() => {
-      if (localStorage.getItem('theme') === 'theme-dark') {
-          setTogClass('dark')
-      } else if (localStorage.getItem('theme') === 'theme-light') {
-          setTogClass('light')
-      }
-  }, [theme])
-
+  console.log(isDarkModeActive)
   return (
-      <div className="container--toggle">
-          {
-              togClass === "light" ?
-              <input type="checkbox" id="toggle" className="toggle--checkbox" onClick={handleOnClick} checked />
-              :
-              <input type="checkbox" id="toggle" className="toggle--checkbox" onClick={handleOnClick} />
-          }
-          <label htmlFor="toggle" className="toggle--label">
-              <span className="toggle--label-background"></span>
-          </label>
+      <div className={DarkModeContainer}>
+        <div className={ToggleButton} onClick={isDarkModeActive ? handleLightMode : handleDarkMode }>
+        {isDarkModeActive ? 'Click for Light Mode' : 'Click for Dark Mode' }
+        </div>
       </div>
   )
 }
