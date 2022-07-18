@@ -1,44 +1,46 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/Link'
+import React from "react";
+import Image from "next/image";
+import Link from "next/Link";
 import { ProjectsContainer, ProjectsBodyContainer } from "./style.module.css";
-import projects from "../assets/projectsData"
-
-
-
-
+import projects from "../assets/projectsData";
 
 const Projects = () => {
-
   const buildImageContainer = (project) => {
-    return(
-      <Link href="./projects-overview.js">
-      <a>
-      <Image
-        src={project.img}
-        alt={project.subtitle}
-        title={project.title}
-        width={400}
-        height={400}
-        /> 
-        </a>
-        </Link>
-    )
-  }
-
     return (
-    <>
-    <div className={ProjectsContainer} id="projects-container">
-        <div><h2>Projects</h2></div>
-    <div className={ProjectsBodyContainer}>
-      {projects.map(project => {
-        const projectContainer = buildImageContainer(project)
-        return projectContainer
-      })}
-    </div>
-    </div>
-    </>
-    )
-  }
+      <Link href={{
+        pathname: '../components/projects-overview',
+        state: {
+          whichProject: project.index
+        }
+      }}>
+        <a>
+          <Image
+            src={project.img}
+            alt={project.subtitle}
+            title={project.title}
+            width={400}
+            height={400}
+          />
+        </a>
+      </Link>
+    );
+  };
 
-export default Projects
+  return (
+    <>
+      <div className={ProjectsContainer} id="projects-container">
+        <div>
+          <h2>Projects</h2>
+        </div>
+        <div className={ProjectsBodyContainer}>
+          {projects.map((project) => {
+            const projectContainer = buildImageContainer(project);
+            return projectContainer;
+          })}
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Projects;

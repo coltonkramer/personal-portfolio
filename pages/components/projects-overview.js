@@ -1,21 +1,23 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/Link'
-import { ProjectsContainer, ProjectsBodyContainer } from "./style.module.css";
-import projects from "../assets/projectsData"
-
-
-
+import React from "react";
+import { useLocation } from 'react-router-dom';
+import  Navigation  from "../components/navigation"
+import projects from "../assets/projectsData";
 
 
 const ProjectsOverview = () => {
-
-
-    return (
+    const location = useLocation();
+    const { whichProject } = location.state;
+  return (
     <>
-        This is the projects overview page
+    <Navigation/>
+    {console.log(whichProject)}
+      <div className="ProjectsOverviewContainerStyle">
+          <h1>This is the projects overview page</h1>
+        <div className="ProjectsOverviewContainer">
+        </div>
+      </div>
     </>
-    )
-  }
+  );
+};
 
-export default ProjectsOverview
+export default ProjectsOverview;

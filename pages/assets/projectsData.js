@@ -7,14 +7,26 @@ const  calculatorImageMainSrc = calculatorImageMain.src
 
 const projects = [
     {
+      index: 0,
       title: "Pokemon",
       subtitle: "Pokemon Battler Game using the PokeApi",
       img: pokemonGameImageMainSrc,
+      secondImg: 'image goes here',
+      pro: "pokemon good stuffs",
+      con: "pokemon bad stuffs",
+      appLink: "youtube.com",
+      github: "github.com",
     },
     {
+      index: 1,
       title: "Calculator",
       subtitle: "Simple calculator app",
       img: calculatorImageMainSrc,
+      secondImg: 'image goes here',
+      pro: "pokemon good stuffs",
+      con: "pokemon bad stuffs",
+      appLink: "youtube.com",
+      github: "github.com"
     },
   //   {
   //     title: "Cafe",

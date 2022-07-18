@@ -108,15 +108,17 @@
     justify-content: space-evenly;
     
 }
-/* The Projects Section ----------------------------------------------------------------------------------------------------------------*/
+
+/* The Dark Mode Section ----------------------------------------------------------------------------------------------------------------*/
 .DarkModeStyle{
     background-color: #141d26;
     color: #F8F8FF;
-}
-.ExpDarkMode{
+  }
+  .ExpDarkMode{
     background-color: #243447;
     color: #F8F8FF;
-}
+  }
   .DarkModeContainer{
     cursor: pointer;
   }
+  
