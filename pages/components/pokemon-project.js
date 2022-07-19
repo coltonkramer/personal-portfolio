@@ -1,22 +1,21 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Navigation from "./navigation";
+import ReturnHome from "./return-home";
 import { ProjectsOverviewContainerStyle, ProjectLinksContainer } from "./style.module.css";
 import projects from "../assets/projectsData";
 
 const ProjectsOverview = () => {
   return (
     <>
-      <Navigation />
+      <ReturnHome />
       <div className={ProjectsOverviewContainerStyle}>
         <div>
         <h1>{projects[0].title}</h1>
         <h2>{projects[0].subtitle}</h2>
         </div>
-        {/* <div className={ProjectsOverviewContainer}> */}
         <Image
-          src={projects[0].img}
+          src={projects[0].secondImg}
           alt={projects[0].subtitle}
           title={projects[0].title}
           width={600}
@@ -37,7 +36,6 @@ const ProjectsOverview = () => {
         <a>To the Repo</a>
         </Link> 
         </div>
-          {/* </div> */}
       </div>
     </>
   );

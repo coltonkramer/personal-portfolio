@@ -1,148 +1,187 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap");
 
 /* The Navigation Section ----------------------------------------------------------------------------------------------------------------*/
-.GlobalNavStyle{
-    width: 100%;
-    background-color: #60C689;
-    margin-bottom: 10%;
+.GlobalNavStyle {
+  width: 100%;
+  background-color: #60c689;
+  margin-bottom: 10%;
 }
-.GlobalNav{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-    padding: 1rem;
+.GlobalNav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
 }
-.NavContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 25%;
+.NavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
 }
-.NavContainer a{
-    font-size: 2em;
+
+.LinkStyle a {
+  display: block;
+  font-size: 1.5em;
+  overflow: hidden;
+  position: relative;
 }
-.NavContainer a:hover{
+/* .LinkStyle a:hover{
     text-decoration: underline;
+} */
+.LinkStyle a::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
 }
-.ContactContainer{
-    padding-top: 2rem;
+.LinkStyle a:hover::after,
+.LinkStyle a:focus::after {
+  transform: translate3d(0, 0, 0);
 }
-.ContactContainer p{
-    padding: 0;
-    margin: .25em
+
+.LinkStyle a {
+  overflow: hidden;
+}
+
+.LinkStyle a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.05em;
+  background-color: #141d26;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.LinkStyle a:hover::after,
+.LinkStyle a:focus::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.ContactContainer {
+  padding-top: 2rem;
+}
+.ContactContainer p {
+  padding: 0;
+  margin: 0.25em;
 }
 /* The Home Section ----------------------------------------------------------------------------------------------------------------*/
-.HomeContainerStyle{
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 15%;
+.HomeContainerStyle {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 15%;
 }
-.SubtitleContainer{
-    width: 50%;
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.SubtitleContainer {
+  width: 50%;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.HeroImage{
-    overflow: hidden;
-    box-shadow: 0 0 0 5px #60C689;
-    padding: 10px;
-}
-
-.HeroImage2{
-    box-shadow: 0 0 0 5px #57DCBC;
-    padding: 15px;
+.HeroImage {
+  overflow: hidden;
+  box-shadow: 0 0 0 5px #60c689;
+  padding: 10px;
 }
 
-.HeroImage3{
-    transform: rotate(45deg);
-    box-shadow:0 0 0 5px #57ACDC;
-    padding: 15px;
+.HeroImage2 {
+  box-shadow: 0 0 0 5px #57dcbc;
+  padding: 15px;
+}
+
+.HeroImage3 {
+  transform: rotate(45deg);
+  box-shadow: 0 0 0 5px #57acdc;
+  padding: 15px;
+  transition-duration: 0.8s;
+  transition-property: transform;
+}
+.HeroImage3:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
 }
 
 /* The Experience Section ----------------------------------------------------------------------------------------------------------------*/
-.ExperienceContainer{
-    width: 100%;
-    padding: 5% 10%;
-    margin: 0 auto;
-    background-color: #57DCBC;
+.ExperienceContainer {
+  width: 100%;
+  padding: 5% 10%;
+  margin: 0 auto;
+  background-color: #57dcbc;
 }
-.ExperienceContainer{
-    font-size: 1.5em;
-    color: #000;
+.ExperienceContainer {
+  font-size: 1.5em;
+  color: #000;
 }
-.ExperienceBodyContainer{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    
+.ExperienceBodyContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.ExpSchool, .ExpWork, .ExpTech{
-    width: 30%;
-    padding-left: 1em;
-}
-
-.ExpImage{
-    border-radius: 50%;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    border: solid 4px #e91E63;
-    padding: 10px;
+.ExpSchool,
+.ExpWork,
+.ExpTech {
+  width: 30%;
+  padding-left: 1em;
 }
 
+.ExpImage {
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: solid 4px #e91e63;
+  padding: 10px;
+}
 
 /* The Projects Section ----------------------------------------------------------------------------------------------------------------*/
-.ProjectsContainer{
-    width: 80%;
-    padding: 15% 0;
-    margin: 0 auto;
-    
+.ProjectsContainer {
+  width: 80%;
+  padding: 15% 0;
+  margin: 0 auto;
 }
-.ProjectsBodyContainer{
-    display: flex;
-    justify-content: space-evenly;
-    
+.ProjectsBodyContainer {
+  display: flex;
+  justify-content: space-evenly;
 }
-.ProjectsOverviewContainerStyle{
-    width: 60%;
-    margin: 0 auto;
-    display: grid;
-    gap: 2em;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 5%;
+.ProjectsOverviewContainerStyle {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 5%;
 }
-.ProjectsOverviewContainerStyle h1, 
-.ProjectsOverviewContainerStyle h2, 
-.ProjectsOverviewContainerStyle h3{
-    text-align: right;
+.ProjectsOverviewContainerStyle h1,
+.ProjectsOverviewContainerStyle h2,
+.ProjectsOverviewContainerStyle h3 {
+  text-align: right;
 }
-.ProjectsOverviewContainerStyle h2{
-    font-size: 2em;
-    color: #60C689;
+.ProjectsOverviewContainerStyle h2 {
+  font-size: 2em;
+  color: #60c689;
 }
-.ProjectLinksContainer{
-    display: flex;
-    flex-direction: column;
+.ProjectLinksContainer {
+  display: flex;
+  flex-direction: column;
 }
-.ProjectLinksContainer a:hover{ 
-    text-decoration: underline;
+.ProjectLinksContainer a:hover {
+  text-decoration: underline;
 }
 
 /* The Dark Mode Section ----------------------------------------------------------------------------------------------------------------*/
-.DarkModeStyle{
-    background-color: #141d26;
-    color: #F8F8FF;
-  }
-  .ExpDarkMode{
-    background-color: #243447;
-    color: #F8F8FF;
-  }
-  .DarkModeContainer{
-    cursor: pointer;
-  }
-  
+.DarkModeStyle {
+  background-color: #141d26;
+  color: #f8f8ff;
+}
+.ExpDarkMode {
+  background-color: #243447;
+  color: #f8f8ff;
+}
+.DarkModeContainer {
+  cursor: pointer;
+}

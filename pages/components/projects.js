@@ -34,6 +34,11 @@ const Projects = () => {
               {buildImageContainer(projects[1])}
             </a>
           </Link>
+          <Link href="../components/rivian-project">
+            <a>
+              {buildImageContainer(projects[2])}
+            </a>
+          </Link>
         </div>
       </div>
     </>

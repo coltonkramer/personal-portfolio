@@ -1,8 +1,16 @@
 import pokemonGameImageMain from "./pokemonGameImageMain.png";
+import pokemonGameImageSecond from "./pokemonGameImageSecond.png";
 import calculatorImageMain from "./calculatorImageMain.png";
+import calculatorImageSecond from "./calculatorImageSecond.png";
+import rivianImageMain from "./rivianImageMain.png";
+import rivianImageSecond from "./rivianImageSecond.png";
 
 const pokemonGameImageMainSrc = pokemonGameImageMain.src;
+const pokemonGameImageSecondSrc = pokemonGameImageSecond.src;
 const calculatorImageMainSrc = calculatorImageMain.src;
+const calculatorImageSecondSrc = calculatorImageSecond.src;
+const rivianImageMainSrc = rivianImageMain.src;
+const rivianImageSecondSrc = rivianImageSecond.src;
 
 const projects = [
   {
@@ -10,7 +18,7 @@ const projects = [
     title: "Pokemon Battler",
     subtitle: "Pokemon Game using the PokeApi",
     img: pokemonGameImageMainSrc,
-    secondImg: "image goes here",
+    secondImg: pokemonGameImageSecondSrc,
     howItWorks: `The rules of the game are pretty simple you can click 'Next Pokemon' on the left side 
       of the screen get select a pokemon for your team. The button on the right will initiate 
       a battle with the current pokemon! An alert will show telling you if you win or lose 
@@ -37,12 +45,38 @@ const projects = [
     title: "Calculator",
     subtitle: "Simple calculator app",
     img: calculatorImageMainSrc,
-    secondImg: "image goes here",
-    howItWorks: `It is intended to work like a regular calculator`,
-    pro: ``,
-    con: ``,
+    secondImg: calculatorImageSecondSrc,
+    howItWorks: ` You use it like you would a regular calculator. Type in a number then press one 
+    of the operator buttons after you type in another number press the equal sign to see your results. 
+    The purpose of this project was to push myself and build something I had never 
+    attempted before. I found that by itself JavaScript is actually not that friendly to math 
+    which made some things rather tedious. It ended up being a good learning experience and 
+    I'd like to revisit this project in the future to make it better.`,
+    pro: `I think the overall aesthetic turned out nicely. Everything is arranged with css grid 
+    which gives it a nice, clean appearance. Along with the monochromatic grayscale which I find 
+    to be much more inviting than a bright white screen. `,
+    con: `The arithmetic can get a little weird when you string long chains of operations. If I were to rebuild this in the future I would use React which would allow the app the track the total more reliably`,
     appLink: "https://coltonkramer.github.io/Calculator-Project/",
     github: "https://github.com/coltonkramer/Calculator-Project",
+  },
+  {
+    index: 2,
+    title: "Rivian",
+    subtitle: "Mock of the Rivian Homepage",
+    img: rivianImageMainSrc,
+    secondImg: rivianImageSecondSrc,
+    howItWorks: ` You use it like you would a regular calculator. Type in a number then press one 
+    of the operator buttons after you type in another number press the equal sign to see your results. 
+    The purpose of this project was to push myself and build something I had never 
+    attempted before. I found that by itself JavaScript is actually not that friendly to math 
+    which made some things rather tedious. It ended up being a good learning experience and 
+    I'd like to revisit this project in the future to make it better.`,
+    pro: `I think the overall aesthetic turned out nicely. Everything is arranged with css grid 
+    which gives it a nice, clean appearance. Along with the monochromatic grayscale which I find 
+    to be much more inviting than a bright white screen. `,
+    con: `The arithmetic can get a little weird when you string long chains of operations. If I were to rebuild this in the future I would use React which would allow the app the track the total more reliably`,
+    appLink: "https://rivianpresentationmain.gatsbyjs.io/",
+    github: "https://github.com/coltonkramer/rivian-presentation",
   },
   //   {
   //     title: "Cafe",
