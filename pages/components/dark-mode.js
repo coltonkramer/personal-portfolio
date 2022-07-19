@@ -6,10 +6,12 @@ import {
   ToggleButton,
   ExpDarkMode,
 } from "./style.module.css";
+const isClient = typeof window !== 'undefined';
+const hasLS = isClient && !!window?.localStorage;
 
 const DarkMode = () => {
   const activeTheme =
-    typeof window !== "undefined" ? localStorage.getItem("theme") : false;
+    hasLS ? localStorage.getItem("theme") : false;
   const [isDarkModeActive, setIsDarkModeActive] = useState(activeTheme);
 
   const handleDarkMode = () => {
