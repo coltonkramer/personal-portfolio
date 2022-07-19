@@ -14,7 +14,7 @@ const DarkMode = () => {
 
   const handleDarkMode = () => {
     document.body.classList.add(DarkModeStyle);
-    document.getElementById("experience-container").classList.add(ExpDarkMode);
+    document.getElementById("experience-container")?.classList.add(ExpDarkMode);
     setIsDarkModeActive(true);
     setTheme(true);
   };
@@ -23,7 +23,7 @@ const DarkMode = () => {
     document.body.classList.remove(DarkModeStyle);
     document
       .getElementById("experience-container")
-      .classList.remove(ExpDarkMode);
+      ?.classList.remove(ExpDarkMode);
     setIsDarkModeActive(false);
     setTheme(false);
   };

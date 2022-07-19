@@ -108,6 +108,30 @@
     justify-content: space-evenly;
     
 }
+.ProjectsOverviewContainerStyle{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 5%;
+}
+.ProjectsOverviewContainerStyle h1, 
+.ProjectsOverviewContainerStyle h2, 
+.ProjectsOverviewContainerStyle h3{
+    text-align: right;
+}
+.ProjectsOverviewContainerStyle h2{
+    font-size: 2em;
+    color: #60C689;
+}
+.ProjectLinksContainer{
+    display: flex;
+    flex-direction: column;
+}
+.ProjectLinksContainer a:hover{ 
+    text-decoration: underline;
+}
 
 /* The Dark Mode Section ----------------------------------------------------------------------------------------------------------------*/
 .DarkModeStyle{

@@ -1,31 +1,19 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/Link";
+import Link from "next/link";
 import { ProjectsContainer, ProjectsBodyContainer } from "./style.module.css";
 import projects from "../assets/projectsData";
 
 const Projects = () => {
   const buildImageContainer = (project) => {
     return (
-
-        <Link
-          href={{
-            pathname: "../components/projects-overview",
-            state: {
-              whichProject: project.index,
-            },
-          }}
-        >
-          <a>
-            <Image
-              src={project.img}
-              alt={project.subtitle}
-              title={project.title}
-              width={400}
-              height={400}
-            />
-          </a>
-        </Link>
+      <Image
+        src={project.img}
+        alt={project.subtitle}
+        title={project.title}
+        width={400}
+        height={400}
+      />
     );
   };
 
@@ -36,10 +24,16 @@ const Projects = () => {
           <h2>Projects</h2>
         </div>
         <div className={ProjectsBodyContainer}>
-          {projects.map((project) => {
-            const projectContainer = buildImageContainer(project);
-            return projectContainer;
-          })}
+          <Link href="../components/pokemon-project">
+            <a>
+              {buildImageContainer(projects[0])}
+            </a>
+          </Link>
+          <Link href="../components/calculator-project">
+            <a>
+              {buildImageContainer(projects[1])}
+            </a>
+          </Link>
         </div>
       </div>
     </>
