@@ -32,7 +32,7 @@ const ProjectsOverview = () => {
         <Link href={projects[1].appLink}>
         <a>To the App</a>
         </Link> 
-        <Link href={projects[0].github}>
+        <Link href={projects[1].github}>
         <a>To the Repo</a>
         </Link> 
         </div>
