@@ -1,5 +1,4 @@
 import React from 'react'
-import { HomeNavigation } from '../HomeNavigation';
 import Image from 'next/image'
 import coltonAndRomy from '../assets/coltonAndRomy.jpg'
 
@@ -24,7 +23,6 @@ const About = () => {
           living in Charlotte again with my wife and our cat.</h4>
       </div>
       </div>
-      <HomeNavigation/>
       </>
     )
   }
