@@ -1,9 +1,9 @@
-import pokemonGameImageMain from "./pokemonGameImageMain.png";
-import pokemonGameImageSecond from "./pokemonGameImageSecond.png";
-import calculatorImageMain from "./calculatorImageMain.png";
-import calculatorImageSecond from "./calculatorImageSecond.png";
-import rivianImageMain from "./rivianImageMain.png";
-import rivianImageSecond from "./rivianImageSecond.png";
+import pokemonGameImageMain from "../pages/assets/pokemonGameImageMain.png";
+import pokemonGameImageSecond from "../pages/assets/pokemonGameImageSecond.png";
+import calculatorImageMain from "../pages/assets/calculatorImageMain.png";
+import calculatorImageSecond from "../pages/assets/calculatorImageSecond.png";
+import rivianImageMain from "../pages/assets/rivianImageMain.png";
+import rivianImageSecond from "../pages/assets/rivianImageSecond.png";
 
 const pokemonGameImageMainSrc = pokemonGameImageMain.src;
 const pokemonGameImageSecondSrc = pokemonGameImageSecond.src;
