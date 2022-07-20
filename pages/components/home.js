@@ -16,8 +16,8 @@ const HomeContainer = () => {
         <Image
         alt="colton with car"
         src={coltonSrc}
-        width={500}
-        height={500}
+        width={350}
+        height={350}
         />
         </div>
         </div>

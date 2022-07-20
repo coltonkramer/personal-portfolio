@@ -110,6 +110,7 @@
   padding: 15px;
   transition-duration: 0.8s;
   transition-property: transform;
+  height: 435px;
 }
 .HeroImage3:hover {
   transform: rotate(360deg);
