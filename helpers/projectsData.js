@@ -65,16 +65,16 @@ const projects = [
     subtitle: "Mock of the Rivian Homepage",
     img: rivianImageMainSrc,
     secondImg: rivianImageSecondSrc,
-    howItWorks: ` You use it like you would a regular calculator. Type in a number then press one 
-    of the operator buttons after you type in another number press the equal sign to see your results. 
-    The purpose of this project was to push myself and build something I had never 
-    attempted before. I found that by itself JavaScript is actually not that friendly to math 
-    which made some things rather tedious. It ended up being a good learning experience and 
-    I'd like to revisit this project in the future to make it better.`,
-    pro: `I think the overall aesthetic turned out nicely. Everything is arranged with css grid 
-    which gives it a nice, clean appearance. Along with the monochromatic grayscale which I find 
-    to be much more inviting than a bright white screen. `,
-    con: `The arithmetic can get a little weird when you string long chains of operations. If I were to rebuild this in the future I would use React which would allow the app the track the total more reliably`,
+    howItWorks: `This was a mock website I built for the interview I had at my current internship. It 
+    was my first big react project and it was the first time I had used a javascript framework at all. 
+    It uses assets I got from the rivian website and I recreated some of the key components including 
+    their main carousel, navigation, and part of the gear shop`,
+    pro: `I learned a ton from this project and I guess I learned enough because it got me an 
+    intership! But dealing with React for the first time was difficult in that the environment is 
+    completely new and there are things you just don't know exist at all until you do`,
+    con: `I wanted to use a content management system but sadly I could not make it happen in the time 
+    I had. Although they make it easy for the developer to use when there are version incompatibilities 
+    things can get weird in the backend. So that will be a challenge for another day!`,
     appLink: "https://rivianpresentationmain.gatsbyjs.io/",
     github: "https://github.com/coltonkramer/rivian-presentation",
   },
