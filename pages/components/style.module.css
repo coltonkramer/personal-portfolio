@@ -9,6 +9,7 @@
 .GlobalNavStyle2 {
   width: 100%;
   background-color: #60c689;
+  margin-bottom: 5%;
 }
 .GlobalNav {
   display: flex;
@@ -186,21 +187,11 @@
     color:#e91e63;
     font-size: 3em;
 }
-.ProjectChipStyle{
-    position: relative;
+.ProjectsChipStyle:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 5px #243447;
 }
-.ProjectChipStyleLink{
-    position: absolute;
-}
-.ProjectChipStyleLink:hover{
-    /* opacity: 0; */
-    border: solid 1px red;
-    transform: scale(3);
-}
-.ProjectChipStyleHover{
-    position: absolute;
-    z-index: -1;
-}
+
 
 /* The Dark Mode Section ----------------------------------------------------------------------------------------------------------------*/
 .DarkModeStyle {
