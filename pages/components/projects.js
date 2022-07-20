@@ -8,7 +8,7 @@ import {
 
   ProjectsChipStyleLink,
 } from "./style.module.css";
-import projects from "../assets/projectsData";
+import projects from "../../helpers/projectsData";
 
 const Projects = () => {
   const buildImageContainer = (project) => {

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ReturnHome from "./return-home";
 import { ProjectsOverviewContainerStyle, ProjectLinksContainer } from "./style.module.css";
-import projects from "../assets/projectsData";
+import projects from "../../helpers/projectsData";
 
 const ProjectsOverview = () => {
   return (
