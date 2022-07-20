@@ -27,13 +27,13 @@ const ProjectsOverview = () => {
         <p>{projects[1].pro}</p>
         <h3>What Went Poorly</h3>
         <p>{projects[1].con}</p>
-        <h3>Links</h3>
+        <h3>Links to the</h3>
         <div className={ProjectLinksContainer}>
         <Link href={projects[1].appLink}>
-        <a>To the App</a>
+        <a>App</a>
         </Link> 
         <Link href={projects[1].github}>
-        <a>To the Repo</a>
+        <a>Repo</a>
         </Link> 
         </div>
       </div>

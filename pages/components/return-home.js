@@ -4,13 +4,13 @@ import DarkMode from "./dark-mode";
 import {
   NavContainer,
   GlobalNav,
-  GlobalNavStyle,
+  GlobalNavStyle2,
   LinkStyle
 } from "./style.module.css";
 
 const ReturnHome = () => {
   return (
-    <div className={GlobalNavStyle}>
+    <div className={GlobalNavStyle2}>
       <div className={GlobalNav}>
         <div className={NavContainer}>
           <div className={LinkStyle}>

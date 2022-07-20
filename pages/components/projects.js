@@ -1,7 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ProjectsContainer, ProjectsBodyContainer } from "./style.module.css";
+import {
+  ProjectsContainer,
+  ProjectsBodyContainer,
+  ProjectsChipStyle,
+  ProjectsChipStyleHover,
+  ProjectsChipStyleLink,
+} from "./style.module.css";
 import projects from "../assets/projectsData";
 
 const Projects = () => {
@@ -24,20 +30,21 @@ const Projects = () => {
           <h2>Projects</h2>
         </div>
         <div className={ProjectsBodyContainer}>
-          <Link href="../components/pokemon-project">
-            <a>
-              {buildImageContainer(projects[0])}
-            </a>
-          </Link>
+          <div className={ProjectsChipStyle}>
+            <div >
+              <Link href="../components/pokemon-project" className={ProjectsChipStyleLink}>
+                <a>{buildImageContainer(projects[0])}</a>
+              </Link>
+            </div>
+            <div className={ProjectsChipStyleHover}>
+              <p>Click here for more information</p>
+            </div>
+          </div>
           <Link href="../components/calculator-project">
-            <a>
-              {buildImageContainer(projects[1])}
-            </a>
+            <a>{buildImageContainer(projects[1])}</a>
           </Link>
           <Link href="../components/rivian-project">
-            <a>
-              {buildImageContainer(projects[2])}
-            </a>
+            <a>{buildImageContainer(projects[2])}</a>
           </Link>
         </div>
       </div>
